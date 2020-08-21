@@ -25,8 +25,8 @@ module.exports = {
             React: "react",
         }),
         new HTMLWebpackPlugin({
-            favicon: path.resolve(__dirname, "../favicon.ico"),
-            template: path.resolve(__dirname, "../index.html"),
+            favicon: path.resolve(__dirname, "../public/favicon.ico"),
+            template: path.resolve(__dirname, "../public/index.html"),
             filename: "index.html",
             inject: true,
             minify: {
@@ -54,9 +54,6 @@ module.exports = {
             {
                 test: /\.(jpg|png|gif|svg)$/,
                 loader: "image-webpack-loader",
-                // Specify enforce: 'pre' to apply the loader
-                // before url-loader/svg-url-loader
-                // and not duplicate it in rules with them
                 enforce: "pre",
             },
             {

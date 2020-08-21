@@ -1,7 +1,7 @@
 {
     "name": "react-webpack-boilerplate",
     "version": "1.0.0",
-    "description": "",
+    "description": "React with Webpack boilerplate configurations.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
         "build": "cross-env mode=production webpack --config webpack/webpack.prod.js"
     },
     "author": "Phong Tran",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.10.5",
         "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -40,8 +40,6 @@
     },
     "dependencies": {
         "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "semantic-ui-css": "^2.4.1",
-        "semantic-ui-react": "^0.88.2"
+        "react-dom": "^16.13.1"
     }
 }
